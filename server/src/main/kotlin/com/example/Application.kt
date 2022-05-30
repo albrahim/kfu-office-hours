@@ -9,7 +9,8 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun main() {
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    val port = System.getenv("PORT")?.toInt() ?: 8080
+    embeddedServer(Netty, port = port, host = "0.0.0.0") {
         DatabaseFactory.init()
         configureSecurity()
         configureStatus()
