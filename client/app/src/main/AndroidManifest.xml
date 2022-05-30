@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.office_hours_client">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Officehoursclient">
+        <activity
+            android:name=".MyProfileActivity"
+            android:label="My Profile"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentActivity"
+            android:label="Appointment"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".AppointmentListActivity"
+            android:label="My Appointments"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".ConcreteSlotActivity"
+            android:label="Office Hour"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorActivity"
+            android:label="User Info"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorListActivity"
+            android:label="Doctors"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".AddSlotActivity"
+            android:label="New Office Hour"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".SlotActivity"
+            android:label="Office Hour"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".SlotListActivity"
+            android:label="Office Hours"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="Signup"
+            android:screenOrientation="sensorPortrait"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".AppointmentActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ContainerStyle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appointment_time_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Time Text" />
+
+        <TextView
+            android:id="@+id/appointment_day_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Day Text" />
+
+        <Button
+            android:id="@+id/other_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other User" />
+
+        <Button
+            android:id="@+id/delete_appointment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
